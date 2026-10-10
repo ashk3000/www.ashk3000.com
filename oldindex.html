@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .ul-style {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+
+        .ul-style .ul-style {
+            list-style-type: circle;
+        }
+
+        .li-style {
+            display: list-item;
+        }
+
+        .in-p-ul {
+            margin-block-start: 0.25em;
+            margin-block-end: 0.25em;
+        }
+    </style>
+
+
+
+
+    <style>
+        @font-face {
+            font-family: IBMPM;
+            src: url(fonts/IBMPlexMono/IBMPlexMono-Bold.ttf);
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'IBMPM';
+            src: url(fonts/IBMPlexMono/IBMPlexMono-SemiBold.ttf);
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'IBMPM';
+            src: url(fonts/IBMPlexMono/IBMPlexMono-Medium.ttf);
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'IBMPM';
+            src: url(fonts/IBMPlexMono/IBMPlexMono-Regular.ttf);
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'IBMPM';
+            src: url(fonts/IBMPlexMono/IBMPlexMono-Light.ttf);
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'IBMPM', Arial, sans-serif;
+        }
+
+
+
+
+        .header {
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+
+
+        body {
+            background-color: #b33434;
+            color: #280606;
+        }
+
+        .text-area {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 0.5em;
+        }
+
+
+        h1 {
+            border: 6px dashed #b33434;
+            /* border-radius: 15px; */
+            margin: 0 auto;
+            height: 4rem;
+            width: 25rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            border: 4px dashed #b33434;
+            /* border-radius: 15px; */
+            margin: 0;
+            height: 3rem;
+            width: 20rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: #8c2424;
+        }
+
+        .section {
+            margin: 1rem;
+        }
+        .section>.content {
+            margin: 1rem 2rem;
+        }
+
+        .section>.content>ul {
+            padding: 0 20px;
+        }
+
+        figure {
+            margin: 1rem 0;
+        }
+
+        figcaption {
+            font-weight: 300;
+            font-size: 0.9em;
+        }
+
+        .text-area {
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            margin: 0;
+            
+        }
+
+        .page {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 80rem;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* .toc {
+            float: left;
+            background-color: red;
+        } */
+    </style>
+
+
+    <!-- <link rel="preload stylesheet" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asher's Website</title>
+</head>
+
+<body>
+
+    <header class="header">
+        ashk3000.com
+        <!-- <nav>
+            <ul>
+                
+            </ul>
+        </nav> -->
+    </header>
+    <div class="page">
+        <main class="text-area content">
+            <h1>About Me</h1>
+
+
+            <nav class="section">
+                <h2>Table of Contents</h2>
+                <div class="content">
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+                </div>
+            </nav>
+
+            <section class="section">
+                <h2 id="bio">
+                    Bio
+                </h2>
+
+                <div class="content">
+
+                <p>I'm a high school student at Edgemont Jr./Sr. High School in Westchester, NY. I'm interested in
+                    <b>computer
+                        science</b> and <b>engineering</b>. At Edgemont I'm president of the Programming Club and a
+                    runner
+                    on the varsitycross country and track teams.
+                </p>
+                <p>
+                    I've loved programming ever since I started on Scratch and later Roblox Studio. I'm most proficient
+                    in <b>Java</b>, but I'm learning C and Rust. Some areas of code that interest me are <b>embedded
+                        systems,
+                        audio, and graphics</b>. I also have interest in <b>Linux</b> and other open source projects.
+                </p>
+                <p>When I'm not programming, I like <a
+                        href="https://listenbrainz.org/user/ashk3000/stats/?range=all_time" target="_blank"
+                        rel="me noopener">listening to music</a>, practicing piano, and playing video games.
+                </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 id="resume">Resume</h2>
+
+                <article class="content">
+                    <h3>
+                        EHS Programming Club
+                    </h3>
+                    <figure>
+                        <img src="assets/club25.png"
+                            alt="Three people stand around a laptop with abstract 3d graphics on it."
+                            style="height: 12.5rem;">
+                        <figcaption>2025</figcaption>
+                    </figure>
+                    <p>
+                        I have been the president of the Programming Club at Edgemont for two years now. In 2025 we had
+                        4
+                        active members and we have grown to 9 this year. Me and my friend pick out weekly lessons or
+                        topics
+                        for
+                        our club members to learn about. We plan fun activies that are interesting for both newcomers
+                        and
+                        experienced programmers. We show off computer science concepts in unconventional ways. Some of
+                        my
+                        favorite things we have covered are: <b>Pygame, Brainfuck, Strudel, and Gulf of Mexico</b>.
+                    </p>
+                    <p>
+                        If you are an EHS student interested in joining the club or have any question feel free to email
+                        my
+                        school address.
+                    </p>
+                </article>
+
+                <article class="content">
+                    <h3>
+                        Running
+                    </h3>
+                    <p>
+                        I have been running at Edgemont since 9th grade. At first I was slow and I didn't even enjoy
+                        running, but I stuck with it. Initially I just liked being able to spend time with my friends,
+                        but
+                        after doing it for a while it rubbed off on me. I got better over time and I began to enjoy it.
+                        Although I like track, cross country is my favorite. Running on the track doesn't compare to
+                        running
+                        through the woods like in cross country. Cross country is way more diverse in terms of meet
+                        locations and people.
+
+                    </p>
+                    <p>
+                        I received the most improved award for both Cross Country and Winter Track when I was a
+                        sophomore,
+                        and during my junior year I was team captain for Cross Country. In that role I had to help with
+                        communicating updates to the team, leading warm-up exercises and handling tasks for the coaches.
+                    </p>
+                    <h4>Awards and Positions</h4>
+                    <h5>Cross Country (2023 to 2025)</h5>
+                    <ul>
+                        <li>Most Improved Award - 2024</li>
+                        <li>Team Captain - 2025</li>
+                        <li>MVP Award - 2025</li>
+                    </ul>
+                    <h5>Winter & Spring Track (2023 to 2026)</h5>
+                    <ul>
+                        <li>Most Improved Award - 2024, Winter Track</li>
+                    </ul>
+                </article>
+
+                <article class="content">
+                    <h3>SummerTech</h3>
+                    <p>Starting in 2022 I have attended SummerTech, which is a summer camp focused on teaching coding
+                        and
+                        animation. I love learning at SummerTech and being a part of that community of people who share
+                        many
+                        of my interests. Being there has shaped my what kind of place I want to go in my future. I have
+                        been
+                        able to teach as a CIT in 2025 and staff in 2026, which has been a great opportunity for me to
+                        work
+                        on my communication skills as a teacher.</p>
+                </article>
+                
+
+            </section>
+
+            <section class="section">
+
+                <h2 id="projects">Projects</h2>
+
+                <div class="content">
+
+                <article>
+                    <h3>Slide 5</h3>
+                    <figure>
+                        <img src="assets/slide5.jpg"
+                            alt="Front cover for the Slide 5 box. It has a photograph of the game. There is a 5 by 5 grid, stands at a 45 degree angle to the ground. multiple white and blue circle pieces are shown suspended in the grid. A hand is about to place a white piece in the right-most slot."
+                            style="height: 12.5rem;">
+                        <figcaption>Slide 5 box</figcaption>
+                    </figure>
+                    <p>
+                        Slide 5 is a board game similar to Connect 4, but
+                        <span class="ul-style in-p-ul">
+                            <span class="li-style">there are 2 sides to put pieces in,</span>
+                            <span class="li-style">pieces only move down the board when pushed,</span>
+                            <span class="li-style">and you must get 5 in a row or diagnal to win.</span>
+                        </span>
+                        My digital recreation of the game includes a terminal and graphical version, along with a bot
+                        that you can play against.
+                    </p>
+
+                    <a href="https://github.com/ashk3000/Slide5">Github Repo</a>
+
+                    Made in Java
+                </article>
+
+                <article>
+                    <h3>
+                        Mr. Flip
+                    </h3>
+                    <figure>
+                        <img src="assets/mrflip.png" alt="Video game screenshot." style="height: 12.5rem;">
+                        <figcaption>Mr. Flip</figcaption>
+                    </figure>
+                    <p>
+                        A little platformer made in Unity. You can learn more at the page linked below.
+                    </p>
+                    <a href="https://www.ashk3000.com/mrflip/">Play Online</a>
+                </article>
+
+                <article>
+                    <h3>
+                        2025 Halloween Costume
+                    </h3>
+                    <figure>
+                        <img src="assets/dev_scout.png" alt="Computer monitor showing preview for 3D printing." style="height: 12.5rem;">
+                        <figcaption>Slicer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/scout_final.png" alt="Orange and black 3D printed headset." style="height: 12.5rem;">
+                        <figcaption>Final</figcaption>
+                    </figure>
+                    <p>For Halloween of 2025, I designed and 3D printed a headset for my costume. The headset actually
+                        worked, I used the parts from old headphones I had and designed around those to make the parts
+                        fit.
+                        I used iterative design to continuously tweak the model to get it to work.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>
+                        Model Train Track Supports
+                    </h3>
+                    <figure>
+                        <img src="assets/dev_mod_sup.png" alt="3D modeling program on laptop." style="height: 12.5rem;">
+                        <figcaption>openSCAD</figcaption>
+                    </figure>
+                    <p>
+                        I used OpenSCAD to design supports for a model rail track. OpenSCAD has its own coding
+                        language
+                        for making 3D Models. This is known as parametric design, and it allows me to easily tweak
+                        the
+                        model at a later time (primarily so I can change the height of the supports just by changing
+                        one
+                        number.)
+                    </p>
+                </article>
+
+                </div>
+
+
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

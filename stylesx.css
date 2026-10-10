@@ -1,0 +1,166 @@
+@font-face {
+  font-family: IBMPM;
+  src: url(fonts/IBMPlexMono/IBMPlexMono-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: IBMPM;
+  src: url(fonts/IBMPlexMono/IBMPlexMono-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: IBMPM;
+  src: url(fonts/IBMPlexMono/IBMPlexMono-Medium.ttf);
+  font-weight: 500;
+}
+
+/* https://www.w3.org/TR/CSS22/sample.html */
+
+h1 {
+  font-family: IBMPM;
+  font-weight: 700;
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+h2 {
+  font-family: IBMPM;
+  font-weight: 700;
+  font-size: 1.5em;
+  /* margin: .75em 0; */
+  margin: 0; /* 0 margin cuz its at the top of a box */
+}
+
+h3 {
+  font-family: IBMPM;
+  font-weight: 700;
+  font-size: 1.17em;
+  margin: .83em 0 0;
+}
+
+h4
+/*p,
+blockquote,
+ul,
+fieldset,
+form,
+ol,
+dl,
+dir,
+menu*/ {
+  font-family: IBMPM;
+  font-weight: 600;
+  font-size: 1.17em;
+  margin: 1.12em 0;
+}
+
+h5 {
+  font-size: .83em;
+  margin: 1.5em 0;
+}
+
+h6 {
+  font-size: .75em;
+  margin: 1.67em 0;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  font-family: IBMPM;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+ul.clean {
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
+}
+
+ul.x88x31 {
+  display: flex;
+}
+
+ul.x88x31>li {
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
+  width: 88px;
+  height: 31px;
+}
+
+
+a {
+  color: #1a0dab;
+}
+
+ul.x88x31 {
+  /* Pixelated Images */
+  image-rendering: optimizeSpeed;
+  /*                     */
+  image-rendering: -moz-crisp-edges;
+  /* Firefox             */
+  image-rendering: -o-crisp-edges;
+  /* Opera               */
+  image-rendering: -webkit-optimize-contrast;
+  /* Chrome (and Safari) */
+  image-rendering: pixelated;
+  /* Chrome as of 2019   */
+  image-rendering: optimize-contrast;
+  /* CSS3 Proposed       */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE8+                */
+}
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+
+.container>* {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.container>div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.container>div.menu {
+  grid-area: menu;
+}
+
+.container>div.content {
+  grid-area: content;
+}
+
+.container>footer {
+  grid-area: footer;
+  padding: 0;
+}
+
+.container>footer>.cozy {
+  padding: 10px;
+}
+
+.i {
+  font-style: italic;
+}
